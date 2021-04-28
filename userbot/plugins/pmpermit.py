@@ -91,11 +91,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         firstname = replied_user.user.first_name
         event.pattern_match.group(1)
         chat = await event.get_chat()
-        if event.is_private:
-            if chat.id == 1492186775 or chat.id == 1169076058:
-                await event.edit(
-                    "குருநாதா 😣, எனது படைப்பாளரை தடுக்க முயற்சித்தீர்கள், மீண்டும் செய்ய வேண்டாம். /nதண்டனை :- இப்போது நான் 100 விநாடிகள் தூங்குவேன்"
-                )
+      
                 await asyncio.sleep(100)
             else:
                 if pmpermit_sql.is_approved(chat.id):
@@ -117,8 +113,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 1492186775 or chat.id == 1169076058:
-                await event.edit("மன்னிக்கவும், எனது குரு-வை நான் புறக்கனிக்க முடியாது😏")
+           
             else:
                 if pmpermit_sql.is_approved(chat.id):
                     pmpermit_sql.disapprove(chat.id)
