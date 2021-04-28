@@ -16,10 +16,10 @@ async def _(event):
         return
     IMSID = bot.uid
     start = datetime.now()
-    event = await edit_or_reply(event, "__**🚴🏻‍♂️ Pong!__**")
+    event = await edit_or_reply(event, "__**🚴🏻‍♂️ pothum pong Pong!__**")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(
-        f"__**🚴🏻‍♂️ Pong!__**\n➥__**Ping Speed**__ {ms}\n➥ __**Bot**__ __**of**__ [{DEFAULTUSER}](tg://user?id={IMSID})"
+        f"__**🚴🏻‍🦾 pothum pong Pong🦿 !__**\n➥__**Ping Speed**__ {ms}\n➥ __**Bot**__ __**of**__ [{DEFAULTUSER}](tg://user?id={IMSID})"
     )
 
