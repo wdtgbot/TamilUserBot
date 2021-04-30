@@ -1,13 +1,11 @@
 """Check if tamilBot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
 # CREDITS: @WhySooSerious, @Sur_vivor
 
-# modified by @saravanakrish
-# Re-written by @iMvEtRi
 from userbot.utils import admin_cmd
 from userbot.uniborgConfig import Config
 from userbot import ALIVE_NAME, CMD_HELP
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "TamilUserBot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "jamelsinghBot"
 
 PM_IMG = Config.ALIVE_IMAGE
 pm_caption = "🤖 **{DEFAULTUSER}:** `ONLINE`\n\n"
